@@ -15,10 +15,11 @@
 
 ### On your home machine
 
-- Go to https://git-scm.com/downloads/win.
-- Select the latest version of Git for Windows.
-- Accept the default settings during the install.
-- At the end of the install open _git-bash_
+- Go to https://git-scm.com/downloads.
+- Select the latest version of Git for Windows/Mac.
+- On Windows accept the default settings during the install.
+  - I can't test this for Mac.
+- At the end of the install open _git-bash_.
 
 ### Enter Some Basic Settings
 
