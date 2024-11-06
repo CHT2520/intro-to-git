@@ -87,7 +87,7 @@ We have to use the `--force` flag because your remote already contains a README 
 ## To Make Further Changes
 
 You will probably want to make further changes to your Laravel app.
-Everytime you've made a significant change e.g. added a new feature, you'll want to commit these changes and push them to your remote. To do this make sure Git Bash is in your project folder and use the following commands:
+Everytime you've made a significant change e.g. added a new feature, you'll want to commit these changes and push them to your remote. To do this make sure git-bash is in your project folder and use the following commands:
 
 ```
 git add --all
