@@ -75,7 +75,7 @@ git push -u origin main --force
 ```
 
 - A pop-up box may appear saying 'Select a credential helper'
-- Select manager (you may be asked to login in to GitHub in a browser)
+  - Select manager (you may be asked to login in to GitHub in a browser)
 - Your files should upload to your GitHub repository
 - Back in a web browser refresh your GitHub repository's homepage, you should find that all the files from your local repository have been uploaded to the remote.
 
