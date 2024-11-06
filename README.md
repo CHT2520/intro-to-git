@@ -79,7 +79,7 @@ git push -u origin main --force
 - Your files should upload to your GitHub repository
 - Back in a web browser refresh your GitHub repository's homepage, you should find that all the files from your local repository have been uploaded to the remote.
 
-We have to use the `--force` flag because your remote already contains a README file. `--force` means we will overwrite the remote file with the one that is your Laravel project. Normally, when push to a remote we don't use `--force`.
+We have to use the `--force` flag because your remote already contains a README file. `--force` means we will overwrite the remote README file with the one that is your Laravel project. Normally, when push to a remote we don't use `--force`.
 
 > You may get an error stating _fatal: detected dubious ownership in repository_. If you do you need to declare the folder as being safe e.g.
 > `git config --global --add safe.directory D:/xampp/htdocs/assignment1`
