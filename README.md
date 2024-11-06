@@ -53,7 +53,6 @@ GitHub is a cloud based service that allows us to back-up and share our code.
 
 ## How to upload your Laravel Assignment to the Assignment Repository
 
-- First delete the default _README.md_ file that is in your Laravel project
 - Open _git-bash_
 - Navigate to your Laravel Assignment Project e.g.
 
@@ -70,31 +69,20 @@ cd D:/xampp/htdocs/assignment1
 git init
 git branch -M main
 git remote add origin https://github.com/CHT2520/assignment-1-change-this-for-your-url
-git pull origin main
+git add --all
+git commit -m "Initial commit"
+git push -u origin main --force
 ```
 
 - A pop-up box may appear saying 'Select a credential helper'
 - Select manager (you may be asked to login in to GitHub in a browser)
-- Open the project folder in VS Code
-- You should find you have a _README.md_ file that Git has downloaded from your remote repository.
-- Replace the contents of this _README.md_ file with the following (using your own student number, firstname and lastname)
+- Your files should upload to your GitHub repository
+- Back in a web browser refresh your GitHub repository's homepage, you should find that all the files from your local repository have been uploaded to the remote.
 
-```
-# Assignment 1 - u01234567 Firstname Lastname
-```
-
-Back in _git-bash_ enter the following commands (one at a time)
-
-```
-git add --all
-git commit -m "Updated the README"
-git push -u origin main
-```
+We have to use the `--force` flag because your remote already contains a README file. `--force` means we will overwrite the remote file with the one that is your Laravel project. Normally, when push to a remote we don't use `--force`.
 
 > You may get an error stating _fatal: detected dubious ownership in repository_. If you do you need to declare the folder as being safe e.g.
 > `git config --global --add safe.directory D:/xampp/htdocs/assignment1`
-
-- Back in a web browser refresh your GitHub repository's homepage, you should find that all the files from your local repository have been uploaded to the remote.
 
 ## To Make Further Changes
 
@@ -118,14 +106,11 @@ For example you might be working on a USB stick at university, you've uploaded y
 
 ### At home (the machine you want to copy to)
 
-- Create a new folder in your _htdocs_ folder.
-- Open git-bash in this folder enter the following commands making sure you enter the URL of your repo.
+- In your _htdocs_ folder.
+- Open git-bash in this folder enter the following command making sure you enter the URL of your repo.
 
 ```
-git init
-git remote add origin https://github.com/CHT2520/assignment-1-change-this-for-your-url
-git branch -M main
-git pull origin main
+git clone https://github.com/CHT2520/assignment-1-change-this-for-your-url
 ```
 
 - The files should download to this folder
@@ -134,7 +119,7 @@ git pull origin main
   composer install
   ```
 - The project's dependencies should now download and install.
-- Remember to change the _DocumentRoot_ setting in your _httpd.conf_ file to point to the _public_ folder of your Laravel project.
+- Change the _DocumentRoot_ setting in your _httpd.conf_ file to point to the _public_ folder of your Laravel project.
 - Save a copy of _env.example_ as _.env_.
 - Edit the _.env_ file to specify the correct settings for the database on the local machine.
 - Make sure your shell/terminal is in your Laravel project folder.
