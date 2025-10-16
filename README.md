@@ -33,23 +33,12 @@ git config --global user.name "firstname lastname"
 
 - You should now be set up with Git.
 
-## Sign up to GitHub
-
-GitHub is a cloud based service that allows us to back-up and share our code.
-
-- Go to https://classroom.github.com/
-- Select 'sign in'
-- Select 'Create an account'
-- Complete the form using your university email address.
-
-## Register for the assignment
-
-- On Brightspace, under _Assessment>Assignment 1_ click on the _Assignment GitHub_ link.
-- Join the classroom by finding your student number in the list.
-- Accept the Assignment
-- You should get confirmation that you've accepted the assignment and a link to your own individual private repository.
-  > Repository or 'repo' is simply a storage area for all your project's file.
-- Click on the link to your repo, you should find it contains a single README.md file.
+## Create a new Repository
+- Visit https://github.com/
+- If you haven't already signed up, sign-up using your university email address.
+- Once you've signed in, create a new repository.
+- Name it 'Assignment 1'
+- Make the visibility 'private' and use the default settings for the other values.  
 
 ## How to upload your Laravel Assignment to the Assignment Repository
 
@@ -68,18 +57,16 @@ cd D:/xampp/htdocs/assignment1
 ```
 git init
 git branch -M main
-git remote add origin https://github.com/CHT2520/assignment-1-change-this-for-your-url
+git remote add origin https://github.com/username/change-this-for-your-repo
 git add --all
 git commit -m "Initial commit"
-git push -u origin main --force
+git push -u origin main
 ```
 
 - A pop-up box may appear saying 'Select a credential helper'
   - Select manager (you may be asked to login in to GitHub in a browser)
 - Your files should upload to your GitHub repository
 - Back in a web browser refresh your GitHub repository's homepage, you should find that all the files from your local repository have been uploaded to the remote.
-
-We have to use the `--force` flag because your remote already contains a README file. `--force` means we will overwrite the remote README file with the one that is your Laravel project. Normally, when push to a remote we don't use `--force`.
 
 > You may get an error stating _fatal: detected dubious ownership in repository_. If you do you need to declare the folder as being safe e.g.
 > `git config --global --add safe.directory D:/xampp/htdocs/assignment1`
@@ -101,11 +88,9 @@ git push -u origin main
 > Git doesn't upload all the files. This is intentional e.g. we don't want to move all files in the _vendor_ folder, and by default we don't want to copy sensitive data like passwords so the _.env_ file isn't copied. In your repo there is a special file call _.gitignore_ that tells Git which files shouldn't be uploaded. Open this in VS Code to see how it specifies files and folder that should be ignored.
 
 ## Moving work from one machine to another
-
 For example you might be working on a USB stick at university, you've uploaded your project to GitHub and then you want to continue working on it on your home PC.
 
 ### At home (the machine you want to copy to)
-
 - In your _htdocs_ folder.
 - Open git-bash in this folder enter the following command making sure you enter the URL of your repo.
 
