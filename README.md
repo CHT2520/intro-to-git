@@ -1,5 +1,14 @@
 # Getting Started with Git and Submitting Your Work for the Assigment
 
+## Create a new Laravel Project
+First you need to create a Laravel project that you will manage using Git.
+- In the shell/terminal navigate to you htdocs directory
+- Create a new Laravel project (just like we did in the introduction to Laravel practical) e.g.
+```
+composer create-project laravel/laravel assignment1
+```
+- This should set up a new Laravel project and install the dependencies.
+- 
 ## Installing Git
 
 ### If you are using a USB stick
@@ -37,7 +46,7 @@ git config --global user.name "firstname lastname"
 - Visit https://github.com/
 - If you haven't already signed up, sign-up using your university email address.
 - Once you've signed in, create a new repository.
-- Name it 'Assignment 1'
+- Name it 'assignment1'
 - Make the visibility 'private' and use the default settings for the other values.  
 
 ## How to upload your Laravel Assignment to the Assignment Repository
