@@ -1,4 +1,4 @@
-# Getting Started with Git and Submitting Your Work for the Assigment
+# Getting Started with Git and Submitting Your Work for the Assigment using XAMPP
 
 ## Create a new Laravel Project
 First you need to create a Laravel project that you will manage using Git.
