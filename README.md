@@ -1,5 +1,7 @@
 # Getting Started with Git and Submitting Your Work for the Assigment using XAMPP
 
+If you are using Codespaces use these instructions https://github.com/CHT2520-web-prog/intro-to-laravel/blob/main/starting_assignment1.md.
+
 ## Create a new Laravel Project
 First you need to create a Laravel project that you will manage using Git.
 - In the shell/terminal navigate to you htdocs directory
@@ -8,7 +10,7 @@ First you need to create a Laravel project that you will manage using Git.
 composer create-project laravel/laravel assignment1
 ```
 - This should set up a new Laravel project and install the dependencies.
-- 
+
 ## Installing Git
 
 ### If you are using a USB stick
